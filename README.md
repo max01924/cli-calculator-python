@@ -8,17 +8,39 @@
 - Fehlerbehandlung integriert (ZeroDivision, ungültige Eingaben)
 
 ## Features
-- Vollständige Ausdrücke
-- Negative und Dezimalzahlen
-- Klammern
-- Division durch 0 abgefangen
 
-## Edge Cases
-- Division durch 0
-- Leere Eingaben
-- Ungültige Zeichen
-- Reihenfolge der Operationen korrekt
+- Full expression support (e.g. `3 + 4 * (2 - 1)`)
+- Parentheses
+- Negative numbers
+- Decimal numbers
+- Power operator (`**`)
+- Error handling (division by zero, invalid input)
+- Secure parsing via AST
 
-## Testen
-pip install pytest
-pytest
+## Project Structure
+
+calculator/
+│
+├── main.py
+├── calculator.py
+├── tests/
+│   └── test_calculator.py
+├── requirements.txt
+└── README.md
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/cli-calculator-python.git
+cd cli-calculator-python
+
+(Optional but recommended) Create a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate
+
+Install dependencies:
+
+pip install -r requirements.txt

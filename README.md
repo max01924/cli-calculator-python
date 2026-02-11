@@ -17,17 +17,6 @@
 - Error handling (division by zero, invalid input)
 - Secure parsing via AST
 
-## Project Structure
-
-calculator/
-│
-├── main.py
-├── calculator.py
-├── tests/
-│   └── test_calculator.py
-├── requirements.txt
-└── README.md
-
 ## Installation
 
 Clone the repository:

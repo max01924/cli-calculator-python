@@ -1,4 +1,4 @@
-# Einfacher CLI-Taschenrechner
+# Simple CLI-Calculator
 
 A simple command-line calculator written in Python.  
 It safely evaluates full mathematical expressions using Python's AST module instead of `eval()`.

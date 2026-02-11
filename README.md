@@ -1,11 +1,9 @@
 # Einfacher CLI-Taschenrechner
 
-## Architekturentscheidungen
-- AST-basiertes Parsing für Sicherheit (kein eval)
-- Nur mathematisch erlaubte Operatoren (+, -, *, /, **, -)
-- Rekursive Funktionsstruktur, kein OOP notwendig
-- CLI in eigener Datei, Logik getrennt
-- Fehlerbehandlung integriert (ZeroDivision, ungültige Eingaben)
+A simple command-line calculator written in Python.  
+It safely evaluates full mathematical expressions using Python's AST module instead of `eval()`.
+
+---
 
 ## Features
 
@@ -17,19 +15,36 @@
 - Error handling (division by zero, invalid input)
 - Secure parsing via AST
 
+---
+
+## Design Decisions
+
+- AST-based parsing instead of `eval()` for security
+- Functional architecture (no classes required for this scope)
+- CLI separated from core logic
+- Explicit operator whitelist
+- Centralized error handling
+
+---
+
 ## Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/yourusername/cli-calculator-python.git
-cd cli-calculator-python
+cd cli-calculator-python```
 
-(Optional but recommended) Create a virtual environment:
+(Optional but recommendet) Create a virtual environment:
 
+```bash
 python3 -m venv venv
-source venv/bin/activate
+source venv/bin/activate```
 
 Install dependencies:
 
-pip install -r requirements.txt
+```bash
+pip install -r requirements.txt```
+
+## Usage
+
